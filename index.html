@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Altaria | Luxury Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- SPLASH INDEPENDIENTE -->
+<div id="splash">
+    <div class="splash-content">
+        <h1 class="logo-text">ALTARIA</h1>
+        <p class="subtitle">Luxury Real Estate</p>
+        <span class="hint">Desliza hacia arriba</span>
+    </div>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div id="page-content" style="display:none;">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Altaria</h1>
+        <nav>
+            <a href="#viviendas">Viviendas</a>
+            <a href="#registro">Registro</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- BUSCADOR -->
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Buscar por ciudad o tipo de vivienda...">
+    </section>
+
+    <!-- VIVIENDAS -->
+    <section id="viviendas" class="properties">
+        <div class="property-card">
+            <img src="data:image/jpeg;base64,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" alt="Villa en Marbella">
+            <h3>Villa de Lujo en Marbella</h3>
+            <p>📍 Marbella</p>
+            <p>💰 1.200.000 €</p>
+            <p>🏠 4 habitaciones · Piscina · Vistas al mar</p>
+            <button>Solicitar información</button>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Casa en Estepona">
+            <h3>Chalet Moderno en Estepona</h3>
+            <p>📍 Estepona</p>
+            <p>💰 950.000 €</p>
+            <p>🏠 4 habitaciones · Jardín · Piscina</p>
+            <button>Solicitar información</button>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80" alt="Casa en Sabinillas">
+            <h3>Casa Independiente en Sabinillas</h3>
+            <p>📍 Sabinillas</p>
+            <p>💰 750.000 €</p>
+            <p>🏠 3 habitaciones · Terraza · Garaje</p>
+            <button>Solicitar información</button>
+        </div>
+
+        <div class="property-card">
+            <img src="https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbeOYktBAPFfTt23HPhndt5b7cRr2vg76pwDjdUVJPRRNfWA6KkC0bxMiq2h3kme0H77lrZ4RvYdrgDZQa3iSsP54oOS04nB3LpLugJtrw6er6G7VFuzhlz~GJpCEb9skCWLMC2gvBvZzgeKhXI5WmNqctyJXZE1ZagPPddXpekJe~cexycWfvukMn5df9U_oA7yEkj_~mNSbmUe2NOOt7h8ZfGhi5UtFblH75z1PChr2cAxg9ia3yj0Db8SIez9nrpnhmXTJLp1KiJyoZZi0eR6IKC7_2F3SpKa62XFAOiFYi1DGFvPin5dZIJ1haHIBw--.jpg" alt="Villa en Marbella">
+            <h3>Villa Moderna en Marbella</h3>
+            <p>📍 Marbella</p>
+            <p>💰 1.500.000 €</p>
+            <p>🏠 5 habitaciones · Piscina · Garaje</p>
+            <button>Solicitar información</button>
+        </div>
+
+        <div class="property-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhnkHqtMsDBd51ECeJGNUugCthylCexMcLw&s" alt="Chalet en Estepona">
+            <h3>Chalet Familiar en Estepona</h3>
+            <p>📍 Estepona</p>
+            <p>💰 870.000 €</p>
+            <p>🏠 4 habitaciones · Jardín · Garaje</p>
+            <button>Solicitar información</button>
+        </div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="registro" class="register">
+        <h2>Registro de Clientes</h2>
+        <p>Rellena tus datos para recibir información personalizada sobre nuestras propiedades.</p>
+        <form id="registerForm">
+            <input type="text" name="name" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="phone" placeholder="Teléfono">
+            <button type="submit">Registrarse</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>Si deseas más información o concertar una visita, puedes contactarnos por los siguientes medios:</p>
+        <p>📞 Teléfono: <strong>671 272 365</strong></p>
+        <p>📧 Email: <strong>contacto@altaria.com</strong></p>
+        <p>📍 Oficina: Avenida de la Costa, Marbella, España</p>
+        <p>🕒 Horario: Lunes a Viernes 9:00 - 18:00</p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
